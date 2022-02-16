@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container" >
-      <div class="show-item" v-show="showItem" @click.prevent="showItem= false">
+      <div class="show-item" v-show="showItem" @click.prevent="closeItem">
         <h1 class=""> {{ name }} </h1>
         <p> {{ body }} </p>
       </div>
@@ -99,6 +99,11 @@ export default {
       this.showItem = true
       this.name = this.posts[i].name
       this.body = this.posts[i].body
+
+    },
+    closeItem() {
+      this.showItem = false,
+      this.name = this.body = ''
     }
   }
 }

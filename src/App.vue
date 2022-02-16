@@ -22,8 +22,8 @@
       <table class="table">
         <thead>
         <tr>
-          <th>name</th>
-          <th>body</th>
+          <th>Title</th>
+          <th>Description</th>
           <th>Action</th>
        </tr>
         </thead>
